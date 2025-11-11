@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园生活指南</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#campus-map" class="nav-link active">校园地图</a></li>
+                <li><a href="#classroom" class="nav-link">教学楼分布</a></li>
+                <li><a href="#activities" class="nav-link">活动预告</a></li>
+                <li><a href="#express" class="nav-link">快递站分布</a></li>
+                <li><a href="#campus-food" class="nav-link">校园美食</a></li>
+                <li><a href="#outside-food" class="nav-link">校外美食</a></li>
+                <li><a href="#outside-fun" class="nav-link">校外游玩</a></li>
+                <li><a href="#departments" class="nav-link">部门展示</a></li>
+                <li><a href="#clubs" class="nav-link">社团展示</a></li>
+                <li><a href="#notices" class="nav-link">注意事项</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 style="font-size: 3rem;"><span style="font-size: 3rem;">WELCOME TO</span><br><span style="font-size: 2.5rem;">信阳农林学院</span></h2>
+            <p style="font-size: 1.5rem;">为你提供全面的校园生活信息</p>
+            <p style="font-size: 1rem;">让你快速适应校园环境，享受美好校园时光</p>
+            <br>
+            <button class="cta-button">开始探索</button>
+        </div>
+    </section>
+
+    <!-- 校园地图区域 -->
+    <section id="campus-map" class="section">
+        <div class="container">
+            <h2 class="section-title">校园地图</h2>
+            <div class="map-intro">
+                <p class="map-description">全面了解校园布局，快速找到目的地</p>
+            </div>
+            <div class="map-content">
+                <div class="map-image">
+                    <img src="map.jpg" alt="校园地图" id="campusMapImage">
+                </div>
+                <div class="map-legend">
+                    <h3 class="legend-title">校园区域分布</h3>
+                    <ul class="legend-list">
+                        <li class="area-item" data-area="教学区"><strong>教学区</strong></li>
+                        <li class="area-item" data-area="宿舍区"><strong>宿舍区</strong></li>
+                        <li class="area-item" data-area="图书馆"><strong>图书馆</strong></li>
+                        <li class="area-item" data-area="餐饮区"><strong>餐饮区</strong></li>
+                        <li class="area-item" data-area="运动场馆"><strong>运动场馆</strong></li>
+                        <li class="area-item" data-area="行政办公"><strong>行政办公</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教学楼分布区域 -->
+    <section id="classroom" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">教学楼分布</h2>
+            <div class="info-list">
+                <div class="info-item classroom-item" data-building="第一教学楼">
+                    <h3>第一教学楼</h3>
+                    <p>📍 位置：图书馆西南侧</p>
+                </div>
+                <div class="info-item classroom-item" data-building="第二教学楼">
+                    <h3>第二教学楼</h3>
+                    <p>📍 位置：东南侧</p>
+                </div>
+                <div class="info-item classroom-item" data-building="第三教学楼">
+                    <h3>第三教学楼</h3>
+                    <p>📍 位置：新操场西侧</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活动预告区域 -->
+    <section id="activities" class="section">
+        <div class="container">
+            <h2 class="section-title">🎉 活动预告</h2>
+            <p class="section-description">了解最新校园活动与讲座通知</p>
+            
+            <div class="activities-list">
+                <div class="activity-item">
+                    <div class="activity-header">
+                        <span class="activity-date">📅 11月09日</span>
+                        <span class="activity-badge hot">热门</span>
+                    </div>
+                    <h3 class="activity-title">图书馆读书分享会</h3>
+                    <p class="activity-desc">📍地点：图书馆二楼报告厅 | ⏰ 时间：14:00-16:00</p>
+                    <p class="activity-content">本周六下午，图书馆将举办“阅读与成长”主题读书分享会，邀请校内知名教授与同学分享读书心得。欢迎广大师生积极参与！</p>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-header">
+                        <span class="activity-date">📅 11月12日</span>
+                        <span class="activity-badge">即将开始</span>
+                    </div>
+                    <h3 class="activity-title">大学生创新创业大赛宣讲会</h3>
+                    <p class="activity-desc">📍 地点：第一教学楼201教室 | ⏰ 时间：19:00-21:00</p>
+                    <p class="activity-content">就业创业部将举办全国大学生创新创业大赛校内选拔赛宣讲会，介绍参赛流程、评审标准及奖励机制。</p>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-header">
+                        <span class="activity-date">📅 11月15日</span>
+                        <span class="activity-badge">报名中</span>
+                    </div>
+                    <h3 class="activity-title">校园歌手大赛初赛</h3>
+                    <p class="activity-desc">📍 地点：学生活动中心大礼堂 | ⏰ 时间：18:30-21:00</p>
+                    <p class="activity-content">文化体育部主办的第五届校园歌手大赛即将开赛，本周三进行初赛，展示你的音乐才华，赢取丰厚奖品！</p>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-header">
+                        <span class="activity-date">📅 11月20日</span>
+                        <span class="activity-badge">讲座</span>
+                    </div>
+                    <h3 class="activity-title">就业指导与职业规划讲座</h3>
+                    <p class="activity-desc">📍 地点：图书馆报告厅 | ⏰ 时间：15:00-17:00</p>
+                    <p class="activity-content">邀请企业HR与优秀校友分享求职经验、面试技巧以及职业发展规划，帮助同学们明确职业方向。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快递站分布区域 -->
+    <section id="express" class="section">
+        <div class="container">
+            <h2 class="section-title">快递站分布</h2>
+            
+            <div class="express-grid">
+                <div class="express-station">
+                    <div class="station-header">
+                        <h3>📮 澡堂二楼驿站</h3>
+                        <span class="station-badge hot">便捷</span>
+                    </div>
+                    <div class="station-content">
+                        <p class="station-location">📍 位置：澡堂二楼</p>
+                        <p class="station-time">⏰ 营业时间：8:00 - 21:00</p>
+                    </div>
+                </div>
+
+                <div class="express-station">
+                    <div class="station-header">
+                        <h3>📮 翰林食府驿站</h3>
+                        <span class="station-badge">热门</span>
+                    </div>
+                    <div class="station-content">
+                        <p class="station-location">📍 位置：翰林食府一楼</p>
+                        <p class="station-time">⏰ 营业时间：8:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校园美食区域 -->
+    <section id="campus-food" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">校园美食</h2>
+            <div class="info-list">
+                <div class="info-item">
+                    <h3>第一食堂</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：教学楼东侧</li>
+                        <li>⏰ 营业时间：6:30-20:00</li>
+                        <li>✨ 特色：早餐丰富、中式套餐</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>第二食堂</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：宿舍区中心</li>
+                        <li>⏰ 营业时间：6:30-21:00</li>
+                        <li>✨ 特色：地方风味、夜宵供应</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>美食广场</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：学生活动中心一楼</li>
+                        <li>⏰ 营业时间：10:00-22:00</li>
+                        <li>✨ 特色：小吃、奶茶、烧烤</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校外美食区域 -->
+    <section id="outside-food" class="section">
+        <div class="container">
+            <h2 class="section-title">校外美食</h2>
+            <div class="info-list">
+                <div class="info-item">
+                    <h3>三桥夜市</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：校园北侧50米</li>
+                        <li>⏰ 营业时间：16:00</li>
+                        <li>✨ 特色：小吃、火锅、烧烤</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>天润广场</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：民权街</li>
+                        <li>⏰ 营业时间：9:00-21:30</li>
+                        <li>✨ 特色：日料、韩餐、海鲜</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>西亚城</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：行政路与龙东路交叉口</li>
+                        <li>⏰ 营业时间：10:00-22:00</li>
+                        <li>✨ 特色：连锁餐饮、电影院、购物</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校外游玩区域 -->
+    <section id="outside-fun" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">校外游玩</h2>
+            <div class="info-list">
+                <div class="info-item">
+                    <h3>公园景区</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：校门1公里</li>
+                        <li>🚌 交通：公交316路、地铁2号线</li>
+                        <li>✨ 特色：湖泊景观、散步、拍照</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>博物馆</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：市中心5公里</li>
+                        <li>🚌 交通：地铁1号线直达</li>
+                        <li>✨ 特色：历史文化、展览参观、学生免费</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>商业街区</h3>
+                    <ul class="place-info-list">
+                        <li>📍 位置：校门2公里</li>
+                        <li>🚌 交通：公交多路、地铁3号线</li>
+                        <li>✨ 特色：购物、美食、电影、KTV</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 部门展示区域 -->
+    <section id="departments" class="section">
+        <div class="container">
+            <h2 class="section-title">学生自助管理部门</h2>
+            
+            <div class="department-grid">
+                <!-- 团总支 -->
+                <div class="department-card">
+                    <h3 class="department-card-title">院团委</h3>
+                    <ul class="department-list">
+                        <li class="dept-item" data-dept="党务助理部">党务助理部</li>
+                        <li class="dept-item" data-dept="组织部">组织部</li>
+                        <li class="dept-item" data-dept="宣传部新媒体工作室">宣传部新媒体工作室</li>
+                        <li class="dept-item" data-dept="青发部">青发部</li>
+                        <li class="dept-item" data-dept="社团科技部">社团科技部</li>
+                    </ul>
+                </div>
+
+                <!-- 学生会 -->
+                <div class="department-card">
+                    <h3 class="department-card-title">学生会</h3>
+                    <ul class="department-list">
+                        <li class="dept-item" data-dept="文化体育部">文化体育部</li>
+                        <li class="dept-item" data-dept="心理健康部">心理健康部</li>
+                        <li class="dept-item" data-dept="就业创业部">就业创业部</li>
+                        <li class="dept-item" data-dept="联络协调部">联络协调部</li>
+                        <li class="dept-item" data-dept="权益保障部">权益保障部</li>
+                    </ul>
+                </div>
+
+                <!-- 自律委 -->
+                <div class="department-card">
+                    <h3 class="department-card-title">自律委</h3>
+                    <ul class="department-list">
+                        <li class="dept-item" data-dept="学风建设部">学风建设部</li>
+                        <li class="dept-item" data-dept="校园文明部">校园文明部</li>
+                        <li class="dept-item" data-dept="女生部">女生部</li>
+                        <li class="dept-item" data-dept="安全部">安全部</li>
+                        <li class="dept-item" data-dept="资助服务部">资助服务部</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 部门弹窗 -->
+    <div id="deptModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <div class="modal-body">
+                <img id="modalImage" class="modal-image" src="" alt="部门图片">
+                <p id="modalDescription" class="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 社团展示区域 -->
+    <section id="clubs" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">社团展示</h2>
+            <div class="club-container">
+                <ul class="club-list">
+                    <li class="club-item" data-club="植物保护社团">植物保护社团</li>
+                    <li class="club-item" data-club="昆虫爱好者社团">昆虫爱好者社团</li>
+                    <li class="club-item" data-club="无人机社团">无人机社团</li>
+                    <li class="club-item" data-club="种子社团">种子社团</li>
+                    <li class="club-item" data-club="器乐社团">器乐社团</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社团弹窗 -->
+    <div id="clubModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="clubModalClose">&times;</span>
+            <h3 id="clubModalTitle" class="modal-title"></h3>
+            <div class="modal-body">
+                <img id="clubModalImage" class="modal-image" src="" alt="社团图片">
+                <p id="clubModalDescription" class="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 教学楼弹窗 -->
+    <div id="buildingModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="buildingModalClose">&times;</span>
+            <h3 id="buildingModalTitle" class="modal-title"></h3>
+            <div class="modal-body">
+                <div id="buildingFloors" class="building-floors"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 校园区域弹窗 -->
+    <div id="areaModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="areaModalClose">&times;</span>
+            <h3 id="areaModalTitle" class="modal-title"></h3>
+            <div class="modal-body">
+                <p id="areaModalDescription" class="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 校园注意事项区域 -->
+    <section id="notices" class="section">
+        <div class="container">
+            <h2 class="section-title">校园注意事项</h2>
+            <div class="notice-grid">
+                <div class="notice-category">
+                    <h3>安全须知</h3>
+                    <ul class="notice-list">
+                        <li>宿舍严禁使用高功率电器，注意用电安全</li>
+                        <li>出入宿舍请携带学生证，配合门卫检查</li>
+                        <li>外出注意人身安全，晚归结伴而行</li>
+                        <li>妥善保管财物，谨防盗窃和诈骗</li>
+                    </ul>
+                </div>
+                <div class="notice-category">
+                    <h3>爱护环境</h3>
+                    <ul class="notice-list">
+                        <li>保持教室清洁，下课后带走垃圾</li>
+                        <li>图书馆内保持安静，爱护书籍设施</li>
+                        <li>实验室遵守规则，爱护仪器设备</li>
+                        <li>不在教室、走廊乱扔垃圾，共同维护校园环境</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>信阳农林学院 | 校园生活指南</p>
+            <p>青春在这里绽放，梦想从这里起航 ✨</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">制作于 2025年</p>
+            <p style="font-size: 0.85rem; margin-top: 5px; color: #999;">本网站最终解释权归制作者团队所有</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
